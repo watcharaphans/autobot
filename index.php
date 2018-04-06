@@ -8,7 +8,7 @@ use \LINE\LINEBot;
 use \LINE\LINEBot\MessageBuilder\TextMessageBuilder;
 
 // Token
-$channel_token = 'sSUx94O0aAdZrwQo85EXZ3poIdqIZQDeSbdN9hBxX5arLf7e44nqa36NVgqON1W6NglViheYIOvN5H8ymQEytL+zKuEvEgGNAdSdnzTJeUIlIYgENGMJBParNDNz1/yVRdENPY7gvFRXABMte23BGAdB04t89/1O/w1cDnyilFU='; 
+$channel_token = 'hrIGS6tRfEMT4rh9WTdwrzCCRm9KM98RFME+yeXZoiP/GxQyEjahJ3a6Siz+Ff3+NglViheYIOvN5H8ymQEytL+zKuEvEgGNAdSdnzTJeULn7Ro2timuIk4GlARuig5qOIzSgNNpW8AaU1pc6uayeAdB04t89/1O/w1cDnyilFU='; 
 $channel_secret = '2a7393359c7302eca994ccee192125ee'; 
 
 // Get message from Line API
@@ -40,9 +40,7 @@ if (!is_null($events['events'])) {
 
 			    $textMessageBuilder = new TextMessageBuilder($respMessage);
 			    $response = $bot->replyMessage($replyToken, $textMessageBuilder);
-				    
-				    
-error_log($response ); 
+			
 			    break;
 			}
 		    }
