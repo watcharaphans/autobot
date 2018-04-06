@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		
-		error_log($event['type'] );
+		
 		 
     
         // Line API send a lot of event type, we interested in message only.
@@ -40,7 +40,10 @@ if (!is_null($events['events'])) {
 
 			    $textMessageBuilder = new TextMessageBuilder($respMessage);
 			    $response = $bot->replyMessage($replyToken, $textMessageBuilder);
-
+				    
+				    
+error_log($event['message']['type']);
+error_log($replyToken);
 			    break;
 			}
 		    }
