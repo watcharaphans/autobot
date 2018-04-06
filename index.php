@@ -42,8 +42,7 @@ if (!is_null($events['events'])) {
 			    $response = $bot->replyMessage($replyToken, $textMessageBuilder);
 				    
 				    
-error_log($event['message']['type']);
-error_log($replyToken);
+error_log($response ); 
 			    break;
 			}
 		    }
