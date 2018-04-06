@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
             				     $respMessage = 'สวัสดีครับ คุณต้องการทราบข้อมูลอะไร';
              				     break;	
            				 default:
-            				     $respMessage = 'งง??';
+            				    // $respMessage = 'งง??';
                				 break;    
         				}
 
