@@ -42,10 +42,13 @@ if (!is_null($events['events'])) {
            				     $respMessage = 'What sup man. Go away!';
            				     break;
           				  case 'f':
-            				    $respMessage = 'Love you lady.';
-             				    break;
+            				     $respMessage = 'Love you lady.';
+             				     break;
+					  case 'hello':
+            				     $respMessage = 'สวัสดีครับ คุณต้องการทราบข้อมูลอะไร';
+             				     break;	
            				 default:
-            				    $respMessage = 'What is your sex? M or F';
+            				     $respMessage = 'งง??';
                				 break;    
         				}
 
