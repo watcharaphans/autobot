@@ -24,7 +24,9 @@ if (!is_null($events['events'])) {
 		 
     
         // Line API send a lot of event type, we interested in message only.
-	if ($event['type'] == 'message') {
+	
+	// if ($event['type'] == 'message')
+	if ($pos = strpos(message, '/', 1)) {
 
 		    switch($event['message']['type']) {
 
